@@ -1,0 +1,59 @@
+@mixin base_mobile {
+  width: 414px;
+  height: 736px;
+  border: 5px solid #000000;
+  border-radius: 40px;
+  box-shadow: 0px 0px 20px 5px rgb(0 0 0 / 25%);
+  background-color: #2e2e2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .head {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .circle {
+      width: 10px;
+      height: 10px;
+      border: 1px solid;
+      border-radius: 10px;
+      background-color: #000000;
+    }
+    .circle1 {
+      @extend .circle;
+    }
+    .circle2 {
+      float: left;
+      margin-top: 15px;
+      margin-right: 10px;
+      @extend .circle;
+    }
+    .bar {
+      float: right;
+      margin-top: 15px;
+      width: 80px;
+      height: 8px;
+      border: 1px solid;
+      border-radius: 10px;
+      background-color: #000000;
+    }
+  }
+  .screens {
+    width: 330px;
+    height: 566px;
+    margin-top: 30px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    position: relative;
+  }
+  .homebtn {
+    margin-top: 9px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #000000;
+    box-shadow: inset 0px 0px 4px 0px;
+    border-radius: 50px;
+    background-color: #2e2e2e;
+  }
+}
