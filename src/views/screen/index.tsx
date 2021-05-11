@@ -1,10 +1,13 @@
+/**
+ * 模拟手机桌面 swiper实现滑动
+ */
 import React, { Component } from 'react'
 import "./index.scss";
 import SwiperCore, { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
 import 'swiper/components/pagination/pagination.scss';
-import ScreenContainer from '@/pages/screen-container';
+import ScreenContainer from '@/components/screen/container';
 SwiperCore.use([Pagination]);
 const list = [{}, {}, {}, {}]
 

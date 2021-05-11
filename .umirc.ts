@@ -9,7 +9,7 @@ export default defineConfig({
     '@': './src/',
   },
   routes: [
-    { path: '/', component: '@/pages/index' },
+    { path: '/', component: '@/views/index' },
   ],
   fastRefresh: {},
 });

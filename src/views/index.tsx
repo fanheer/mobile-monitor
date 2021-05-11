@@ -1,5 +1,5 @@
 import './index.scss';
-import Base from "@/pages/base";
+import Base from "@/views/base";
 export default function IndexPage() {
   return (
     <Base/>

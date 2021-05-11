@@ -1,4 +1,7 @@
-import Screen from "@/pages/screen";
+/**
+ * 模拟手机外壳结构
+ */
+import Screen from "@/views/screen";
 import "./index.scss";
 export default function Base() {
     return (

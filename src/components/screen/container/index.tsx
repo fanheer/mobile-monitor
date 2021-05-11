@@ -1,3 +1,6 @@
+/**
+ * 模拟手机内屏幕
+ */
 import React from 'react'
 import './index.scss';
 export default function ScreenContainer() {
