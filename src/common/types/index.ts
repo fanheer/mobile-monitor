@@ -1,7 +1,5 @@
-export interface IScreen {
-    icons?: IIcons[]
-}
+
 export interface IIcons {
-    name: string
+    nameCN: string
     logo: string
 }

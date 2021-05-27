@@ -1,22 +1,21 @@
 /**
  * 模拟手机内屏幕
  */
-import { useEffect, useState } from 'react';
 import Icon from '@/components/screen/icon';
 import './index.scss';
-import { IScreen, IIcons } from '@/common/types';
+import { IIcons } from '@/common/types';
 interface IProps {
-    screenData: IScreen
+    iconlist: IIcons[]
 }
 export default function ScreenContainer(props: IProps) {
-    const { screenData } = props;
+    const { iconlist } = props;
    
     return (
         <div className="screen-container">
             <div className="icon-list">
-                {screenData?.icons?.map((item: IIcons) => {
+                {iconlist?.map((item: IIcons) => {
                     return (
-                        <Icon key={item?.name} iconData={item} />
+                        <Icon key={item?.nameCN} iconData={item} />
                     )
                 })}
             </div>
