@@ -1,9 +1,8 @@
-/**
- * 模拟手机外壳结构
- */
-import Screen from "@/views/screen";
+import React from 'react'
+import Header from './header'
 import "./index.scss";
-export default function Base() {
+
+export default function Layout(props: any) {
     return (
         <div className="base-container">
             <div className="mobile-simulator">
@@ -15,10 +14,12 @@ export default function Base() {
                     </div>
                 </div>
                 <div className="screens">
-                   <Screen />
+                    <Header />
+                    {props.children}
                 </div>
                 <div className="homebtn"></div>
             </div>
         </div>
+           
     )
 }

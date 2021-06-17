@@ -10,12 +10,15 @@ interface IProps {
 export default function ScreenContainer(props: IProps) {
     const { iconlist } = props;
    
+    const clickIcon = (data: IIcons) => {
+        console.log(data)
+    }
     return (
         <div className="screen-container">
             <div className="icon-list">
                 {iconlist?.map((item: IIcons) => {
                     return (
-                        <Icon key={item?.nameCN} iconData={item} />
+                        <Icon onClick={clickIcon} key={item?.nameCN} iconData={item} />
                     )
                 })}
             </div>

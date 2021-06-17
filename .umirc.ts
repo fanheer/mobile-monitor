@@ -1,5 +1,6 @@
 import { defineConfig } from 'umi';
-const { UMI_ENV } = process.env
+import { RouterPath } from './src/common/constants/router';
+const { UMI_ENV } = process.env;
 
 export default defineConfig({
   nodeModulesTransform: {
@@ -9,7 +10,15 @@ export default defineConfig({
     '@': './src/',
   },
   routes: [
-    { path: '/', component: '@/views/index' },
+    {
+      exact: false,
+      path: '/',
+      component: '@/layout',
+      routes: [
+        { path: '/', component: '@/views/screen' },
+        { path: RouterPath.setting, component: '@/pages/setting' },
+      ],
+    },
   ],
   fastRefresh: {},
 });
